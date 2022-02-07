@@ -12,7 +12,19 @@ n -> 1-
 sum = 1+2+3+...+10 = 55 */
 
 #include <stdio.h>
-int main() {
+int main() 
+{
+  int n,i;
+	float sum=0;
+	
+	printf("Enter number for 'n':");
+	scanf("%d",&n);
+	
+	for(i=1;i<=n;i++)
+	{
+		sum=sum+i;
+	}
+	printf("sum is : %.2f", sum);
   
   return 0;
 }
